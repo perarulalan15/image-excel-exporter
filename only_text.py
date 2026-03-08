@@ -2,7 +2,7 @@ import os
 import json
 from paddleocr import PaddleOCRVL
 
-IMG_DIR = r"E:\Arul\AI\ST\img"
+IMG_DIR = r"your_img_path"
 
 base_dir = os.path.dirname(IMG_DIR)
 
@@ -54,4 +54,5 @@ for image_file in os.listdir(IMG_DIR):
 
         print(f"Saved text: {txt_path}")
     else:
+
         print("No text found.")
